@@ -38,9 +38,6 @@ Start the server
   goto the  your project directory and right click on index.html page select option 'open with Live Server'  
 ```
 
-
-## Authors
-
 ## Authors
 
 - [@Gyanendra jha](https://github.com/Gyan1000)
