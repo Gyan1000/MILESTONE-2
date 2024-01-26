@@ -1,0 +1,339 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+  letter-spacing: 1px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  overflow: auto;
+  transition: all 1s ease-out;
+}
+/*  HEAD PART CODING STARTS HERE (heading,input box codiing) */
+#heading_content {
+  margin: 0.3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.heading {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  position: relative;
+  letter-spacing: 0.3rem;
+  transition: all 1s;
+}
+
+/*START CONDING TO EXTRA EFFORT FOR DESIGNIBG HEADING(Move List) WHEN YOU HOVER ON */
+.heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 0.2rem;
+  transition: all ease 1s;
+  background-color: #fff;
+}
+.heading:hover::after {
+  width: 100%;
+}
+/*END CODING TO EXTRA EFFORT FOR DESIGNIBG HEADING(Movie List) WHEN YOU HOVER ON IT */
+
+.input-box {
+  width: 100%;
+}
+
+.input-style {
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: medium;
+  outline: none;
+  border-radius: 0.5rem;
+  transition: transform 0.5s;
+  border: none;
+}
+/* HEAD PART CODING ENDS HERE */
+
+/* movie display container coding */
+
+.movie-container {
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 17rem);
+  grid-gap: 1rem;
+  width: 80vw;
+}
+.mymovie {
+  display: flex;
+  height: 22rem;
+  padding: 0.7rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(5, 0, 27);
+  border-radius: 5%;
+  overflow: auto;
+  position: relative;
+}
+/* toltip design 'CLICK ME' */
+#toltip {
+  position: absolute;
+  z-index: 1;
+  width: 7rem;
+  padding: 0.1rem 0.2rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  visibility: hidden;
+  display: inline-block;
+  cursor: pointer;
+  top: 0;
+  left: 0.8rem;
+  background-color: black;
+  font-size: small;
+  letter-spacing: 0.2rem;
+}
+.info1 {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+}
+.info1 p {
+  height: 2rem;
+  overflow: auto;
+}
+.movie-button {
+  margin-top: 0.5rem;
+  background-color: red;
+  color: white;
+  width: 100%;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  transition: transform 0.5s;
+}
+/* ERROR MESSAGE WILL DISPLAY WHEN MOVIES HAVE NOT BEEN FOUND */
+.error-message {
+  color: red;
+  width: 65rem;
+  text-align: center;
+  margin: 2rem;
+  font-weight: 900;
+  display: block;
+}
+
+.img-container {
+  width: 85%;
+  height: 12.5rem;
+  margin-bottom: 1rem;
+  transition: transform 0.5s;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* hover effects */
+
+.movie-button:hover {
+  transform: scaleX(0.8);
+  font-size: medium;
+  font-weight: 600;
+  background-color: white;
+  color: red;
+}
+.input-style:hover,
+.img-container:hover {
+  transform: scale(1.1);
+}
+.mymovie:hover #toltip {
+  visibility: visible;
+}
+/* THIS SECTION DESCRIBES MOVE DETAILS  AFTER CLICKING ON 'CLICKING' OR 'WTATCH NOW' BUTTON*/
+
+.header-section {
+  padding: 0 1rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 1.5rem;
+  height: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-stroke: 4px #fff8f8;
+  
+  color: transparent;
+  background-color: gold;
+}
+#back-btn button {
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 5rem;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  transition: all 0.5s;
+  background-color: rgb(211, 202, 202);
+}
+/*  IN INFO BOX THERE ARE MOVIE TITLE AND DESCRIPTION */
+#movie-content-heading {
+  width: 100%;
+  height: 28.5rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(80, 77, 77); 
+  padding: 1rem;
+}
+#movie-page-info {
+  width: 45%;
+  overflow: auto;
+  margin: auto 0;
+  color: white;
+  text-align: center;
+}
+
+#movie-page-img-box {
+  width: 55%;
+  border-radius: 0.9rem;
+  border: 5px solid white;
+  transition: all 1s;
+}
+
+.movie_info {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  -webkit-text-stroke: 5px rgb(248, 211, 3);
+  letter-spacing: 0.8rem;
+  color: transparent;
+}
+.m-des {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  -webkit-text-stroke: 2px #fdf9f9;
+  letter-spacing: 0.2rem;
+  color: transparent;
+}
+
+
+#back-btn button:hover {
+  transform: scale(1.1);
+}
+
+/* make the web page responsive */
+@media (max-width: 1270px) {
+  .movie-container {
+    grid-template-columns: repeat(3, 16rem);
+
+    grid-gap: 0.5rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .movie-container {
+    grid-template-columns: repeat(2, 16rem);
+  }
+  .header-section {
+    font-size: 1rem;
+  }
+  .movie_info {
+    font-size: 2rem;
+    -webkit-text-stroke: 2px rgb(248, 211, 3);
+    letter-spacing: 0.5rem;
+  }
+  .m-des {
+    font-size: 1rem;
+    -webkit-text-stroke: 1px white;
+    word-break: break-all;
+  }
+}
+
+@media (max-width: 640px) {
+  .movie-container {
+    grid-template-columns: 16rem;
+  }
+  #movie-page-img-box {
+    height: 20rem;
+    margin: auto;
+  }
+  .movie_info {
+    font-size: 1rem;
+    -webkit-text-stroke: 2px rgb(248, 211, 3);
+    letter-spacing: 0.2rem;
+  }
+  .m-des {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 380px) {
+  .movie-container {
+    grid-template-columns: 12rem;
+  }
+  .header-section {
+    font-size: 0.7rem;
+    -webkit-text-stroke: 2px #fff8f8;
+
+    padding: 0;
+  }
+  #back-btn button {
+    width: 2.5rem;
+  }
+
+  #movie-page-info {
+    width: 50%;
+    font-size: 0.8rem;
+  }
+  .movie_info {
+    -webkit-text-stroke: 1px rgb(248, 211, 3);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    word-break: break-all;
+  }
+  .m-des {
+    font-size: 0.8rem;
+    -webkit-text-stroke: 1px white;
+    word-break: break-all;
+  }
+}
+
+@media (max-width: 260px) {
+  .movie-container {
+    grid-template-columns: 10rem;
+  }
+}
+@media (max-width: 180px) {
+  .movie-container {
+    grid-template-columns: 8rem;
+  }
+  #movie-page-img-box {
+    height: 28.5rem;
+  }
+}

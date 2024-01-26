@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App</title>
+    <!-- + icon fontawesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- css file link -->
+    <link rel="stylesheet" href="style.css">
+    
+     <!-- javascript file link -->
+     <!-- defer attribute:-it executes the script only after the browser completes the rendering activity. -->
+    <script src="script.js" defer></script>
+    
+</head>
+<body onload="homePage()">
+  <main class="container">
+    <!-- header section -->
+     <heading class="header-section">
+
+        <div class="heading">
+            <h1>PWSkills Blog</h1>
+         </div>
+
+         <div class="addButton">
+          <i class="fa-solid fa-plus fa-lg anchor" ></i>
+         </div>
+        
+      </heading>
+     <!-- head section ends here -->
+
+     <!-- blog list section -->
+     <section id="blog">
+
+        <!-- home page post code -->
+
+         <!--  <div class="b-list">
+
+      <div class="img-box">
+      <img src=${poster} alt="image not found">
+      </div>
+      
+      <div class="b-title">
+       ${title}
+      </div>
+
+      <div class="b-des">
+       ${des}
+      </div>
+    
+      <a href="BlogPage.html?id=${id}" id="b-btn" class="anchor"  targer=_blank>Read</a> 
+        </div> -->
+
+      </section>
+     
+     <section id="popup-container">
+        <div id="popup-content">
+           <form action="" id="input-form" name="myForm">
+            
+            <span id="error_url" class="error_message"></span>
+            <input type="url" name="" id="url" placeholder="Enter Blog Poster url" required>
+            
+            <span id="error_title" class="error_message"></span>
+            <input type="text" name="" id="title" placeholder="Enter Blog Title" required>
+            
+            <span id="error_des" class="error_message"></span>
+            <input type="text" name=""  id="des" placeholder="Enter Blog Description" required>
+          
+             <span id="error_write" class="error_message"></span>
+            <textarea name="" id="write" cols="40" rows="10" placeholder="write"></textarea>
+           
+            
+            <button type="submit" id="submit_btn" onclick="info()">Add Blog</button>
+           
+            <span id="close"> <i class="fa-solid fa-xmark anchor"></i></span>
+          
+           
+         </form>
+         <span class="success-message hide"></span>
+         </div>
+      </section>
+     
+   </main>
+   
+</body>
+</html>

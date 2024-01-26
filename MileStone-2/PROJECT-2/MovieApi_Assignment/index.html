@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search Website</title>
+
+    <!-- css file-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- google-font file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+     <!--back button icon  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- javascript file -->
+    <!-- defer attribute:-it executes the script only after the browser completes the rendering activity. -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body onload="initialization()">
+    <main class="main-container">
+      <heading id="heading_content">
+        <!-- movie list -->
+        <h1 class="heading">Movie List </h1>
+
+        <div class="input-box">
+          <input
+            type="text"
+            id="search-box"
+            placeholder="Enter Movie Name"
+            class="input-style"
+            onkeyup="findMovies()"
+          />
+        </div>
+      </heading>
+
+      <!-- Movie display container code -->
+
+      <section class="movie-container" id="m-container">
+        <!-- <div class="mymovie">
+            <div class = "img-container">
+                <img src = "${moviePoster}" alt="image Not found">
+            
+              </div>
+            <div class = "info1">
+               
+                 <p>${movies[id].Title}</p>
+                 <button class="movie-button">watch Now</button>
+            </div> 
+
+          </div>  -->
+      </section>
+      <!-- movie details -->
+      <section id="movieContent">
+
+        <!-- <header class="header-section">
+     
+
+          <div class="heading">
+  
+              <h1>Show Details</h1>
+  
+           </div>
+  
+           <div id="back-btn">
+           
+            <a href="index.html"> <i class="fa-solid fa-arrow-left fa-lg anchor" style="color: #000000;"></i></a>
+           
+          </div>
+  
+         </header>  -->
+
+
+        <!--  `<div id="movie-content-heading">
+           <div id="movie-page-info">
+          <h4 class="m-title">${info[i].title}</h4>
+           <p class="m-des"> ${info[i].year}</p>
+            </div>
+            <div id="movie-page-img-box" class="anchor">
+            <img src="${poster}" alt='image not found'>
+            </div>
+          </div>
+         
+         ` -->
+         </section>
+    </main>
+  </body>
+</html>
