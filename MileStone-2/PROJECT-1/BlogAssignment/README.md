@@ -47,7 +47,8 @@ Start the server
 
 - If you have any feedback, please reach out to us at gyanjha1000@gmail.com
 
-  ##Screenshot
+ 
+ ## Screenshot
   ![PwSkills_Blog-1](https://github.com/Gyan1000/MILESTONE-2/assets/125688259/b714ef03-ce8f-4105-9100-662fff2dc119)
   
   ![PwSkills_Blog-2](https://github.com/Gyan1000/MILESTONE-2/assets/125688259/960018b1-6d1e-420d-ab32-52530f465aa8)
