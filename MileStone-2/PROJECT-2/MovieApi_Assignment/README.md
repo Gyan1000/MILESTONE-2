@@ -1,12 +1,12 @@
 # MOVIE SEARCH
 
-This app will help you to search any movie.As you type movie name the result will come with movie's name and poster.
+- This app will help you to search any movie.As you type movie name the result will come with movie's name and poster.
 
-You can also see the full details of movie after clicking watch now button.
+- You can also see the full details of movie after clicking watch now button.
 
-In this application I have used only one page to show both the movie list and movie details.
+- In this application I have used only one page to show both the movie list and movie details.
 
-As you click on "watch now" button or tooltip you can see the movie details info on the same page you are looking movie list
+- As you click on "watch now" button or tooltip you can see the movie details info on the same page you are looking movie list
 
 
 ## Features
