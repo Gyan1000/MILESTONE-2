@@ -1,7 +1,7 @@
 
 # PWSkills Blog
 
-This applicatio will allow users to add their own blogs and read any existing blog posts.
+This applicatio allows users to add their own blogs and read any existing blog posts.
 
 ##### You can share any topic related to your professional and personal life with the topic's title and description. 
 
