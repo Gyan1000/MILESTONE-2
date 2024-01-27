@@ -1,9 +1,10 @@
 
 # TODO LIST
 
-It’s a list of tasks you need to complete or things that you want to do.\
-It will help you stay organised when you write all your tasks in a list, they seem more manageable.\
-A to-do list is just a list of things you have to-do. That means basically anything and everything can be on your to-do list.Effectively tracking when your work is due can help you prioritize and get great work done.
+-- It’s a list of tasks you need to complete or things that you want to do.\
+-- It will help you stay organised when you write all your tasks in a list, they seem more manageable.\
+-- A to-do list is just a list of things you have to-do. That means basically anything and everything can be on your to-do 
+   list.Effectively tracking when your work is due can help you prioritize and get great work done.
 
 
 ## Features
