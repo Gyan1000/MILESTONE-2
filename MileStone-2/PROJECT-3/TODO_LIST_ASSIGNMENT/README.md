@@ -49,7 +49,7 @@ npm start
 
 - If you have any feedback, please reach out to us at gyanjha1000@gmail.com
 
-## Secreenshot
+## Screenshot
 
   ![Todo-List](https://github.com/Gyan1000/MILESTONE-2/assets/125688259/a017bc6b-4e50-4a7e-a2da-3573550608bb)
 
