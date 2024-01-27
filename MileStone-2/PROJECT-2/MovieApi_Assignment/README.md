@@ -53,7 +53,7 @@ If you have any feedback, please reach out to us at gyanjha1000@gmail.com
 ##screenshot
 ![Movie-1](https://github.com/Gyan1000/MILESTONE-2/assets/125688259/99a8fe32-e03c-4530-bb93-9a438e9f0b86)
 
-[Movie-2](https://github.com/Gyan1000/MILESTONE-2/assets/125688259/c40ecdfe-0523-49ba-ae6b-cef47b445305)
+![Movie-Details](https://github.com/Gyan1000/MILESTONE-2/assets/125688259/084df106-e726-4119-a258-66089211cc2c)
 
 
 
