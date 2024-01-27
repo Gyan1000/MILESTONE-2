@@ -46,3 +46,6 @@ npm start
 
 - If you have any feedback, please reach out to us at gyanjha1000@gmail.com
 
+  ![LinkedIn](https://github.com/Gyan1000/MILESTONE-2/assets/125688259/c2e59c2a-ad43-473f-a615-2fd4bb85e272)
+
+
